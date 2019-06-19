@@ -1,0 +1,93 @@
+.commCard-container {
+  padding: 10px 0 0;
+  width: 100%;
+  margin: 10px 0;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background: #ffffff;
+  border-radius: 5px;
+  a {
+    text-decoration: none;
+    color: #4c4b50;
+  }
+}
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 15px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.header-icon-container {
+  background: #59b1ed;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: #ffffff;
+}
+.header-text-container {
+  p {
+    margin: 0;
+  }
+  .header-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .header-content {
+    font-size: 12px;
+    span {
+      color: #ffffff;
+      padding: 2px 10px;
+      border-radius: 10px;
+      background: #59b1ed;
+      margin-right: 10px;
+    }
+  }
+}
+.card-content {
+  padding: 0 15px;
+  p {
+    i {
+      margin-right: 5px;
+    }
+  }
+}
+.button-container {
+  width: 100%;
+  display: flex;
+  > * {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+    background: none;
+    outline: none;
+    border: 0;
+    > button {
+      width: 100%;
+    }
+  }
+  button {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+    background: none;
+    outline: none;
+    border: 0;
+    padding: 10px;
+    font-size: 13px;
+    i {
+      margin-right: 3px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  button:first-child {
+    border-top: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+  }
+  button:last-child {
+    border-top: 1px solid #f5f5f5;
+    border-left: 1px solid #f5f5f5;
+  }
+}

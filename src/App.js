@@ -1,24 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Switch, Route, Redirect, BrowserRouter } from "react-router-dom";
+import Communications from "./containers/Communications/Communications";
+import Discussion from "./containers/Discussion/Discussion";
+import Comment from "./containers/Comment/Comment";
+
+import "./App.scss";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Communications} />
+          <Route
+            exact
+            path="/discussion/:discussion"
+            component={Communications}
+          />
+          <Route
+            exact
+            path="/discussion/:discussion/addcomment"
+            component={Comment}
+          />
+          <Redirect from="/" to="/" />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }

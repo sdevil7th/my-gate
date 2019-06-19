@@ -1,0 +1,13 @@
+body {
+  color: #4c4b50;
+  margin: 0;
+  * {
+    box-sizing: border-box;
+  }
+  > div {
+    width: 100%;
+  }
+}
+.App {
+  width: 100%;
+}

@@ -1,0 +1,44 @@
+.layout-container {
+  background: #f4f0ef;
+  width: 100%;
+  position: relative;
+  padding: 48px 0px 0px;
+}
+.layout-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-image: linear-gradient(to right, #e33f56, #e33c29);
+  padding: 15px;
+  * {
+    color: #ffffff;
+  }
+  .layout-back-button {
+    margin-right: 20px;
+  }
+  .layout-hide {
+    float: right;
+  }
+}
+.footer-button {
+  font-size: 14px;
+  white-space: nowrap;
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 15px 20px;
+  background-image: linear-gradient(to right, #e33f56, #e33c29);
+  color: #ffffff;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  > i {
+    margin-right: 5px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
