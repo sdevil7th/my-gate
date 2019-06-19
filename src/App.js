@@ -12,11 +12,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Communications} />
-          <Route
-            exact
-            path="/discussion/:discussion"
-            component={Communications}
-          />
+          <Route exact path="/discussion/:discussion" component={Discussion} />
           <Route
             exact
             path="/discussion/:discussion/addcomment"

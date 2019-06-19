@@ -1,0 +1,32 @@
+.bubbleIcon {
+  background: rgb(89, 177, 237);
+  color: rgb(255, 255, 255);
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discussion-header-2 {
+  padding: 15px;
+}
+
+.no-padding {
+  padding: 0px;
+}
+.image-container {
+  display: flex;
+  overflow: scroll;
+  :last-child {
+    padding: 0px;
+  }
+}
+
+.image {
+  width: 120px;
+  height: 120px;
+  margin: 8px 8px 8px 0;
+  border-radius: 12px;
+}
